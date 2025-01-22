@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="icon" href="images/ks.ico.png" type="image/x-icon">
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>KS Fragrance </title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+  <style>
+/* Scroll-to-Top Button Styling */
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background-color: black;
+  color: #FFD700;
+  font-size: 24px;
+  text-align: center;
+  line-height: 50px;
+  box-shadow: 0 0 20px #FFD700, 0 0 30px #FFD700;
+  cursor: pointer;
+  display: none; /* Hidden by default */
+  z-index: 1000;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.scroll-to-top:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 30px #FFD700, 0 0 40px #FFD700;
+}
+
+    /* Highlight product */
+
+    .filter_section {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+    .product_container .box {
+      width: 50px;
+      transition: all 0.4s ease-in-out; /* Smooth transition */
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px;
+      justify-content: center;
+    }
+
+    .product_container .box:hover {
+      transform: scale(1.20); /* Zoom in */
+      box-shadow: 0 0 20px 10px rgba(255, 215, 0, 0.5); /* Smooth glowing neon effect */
+      border-radius: 25px; /* Curve the corners */
+      border: 3px solid #FFD700; /* Yellow border */
+    }
+
+    .product_container .box img {
+      width: 80%; /* Ensure image fits within box */
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .product_container .box.selected {
+      border: 3px solid #FFD700; /* Yellow color */
+      border-radius: 15px; /* Curve the corners */
+      box-shadow: 0 0 20px 10px rgba(255, 215, 0, 0.5); /* Smooth glowing neon effect */
+      transition: all 0.4s ease-in-out; /* Smooth transition */
+    }
+      .whatsapp-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #25d366;
+      color: #fff;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease-in-out;
+      box-shadow: 0 0 15px rgba(37, 211, 102, 0.6);
+    }
+
+    .whatsapp-button:hover {
+      background-color: #1da851;
+      box-shadow: 0 0 25px rgba(37, 211, 102, 1);
+    }
+
+    .whatsapp-button img {
+      width: 20px;
+      height: 20px;
+    }
+
+    .btn-box {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .btn-box a {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 18px;
+      color: #fff;
+      background-color: #ffd700;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: all 0.3s ease-in-out;
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+    }
+
+    .btn-box a:hover {
+      background-color: #ffc107;
+      box-shadow: 0 0 25px rgba(255, 215, 0, 1);
+    }
+
+    
+  </style>
+</head>
+
+<body class="sub_page">
+  <div class="hero_area ">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              KS FRAGRANCE 
+            </span>
+          </a>
+          <div class="" id="">
+            <!-- <div class="User_option">
+              <form class="form-inline my-2  mb-3 mb-lg-0">
+                <input type="search" placeholder="Search">
+                <button class="btn   my-sm-0 nav_search-btn" type="submit"></button>
+              </form>
+              <a href="">
+                <img src="images/bag.png" alt="">
+              </a>
+            </div> -->
+
+            <div class="custom_menu-btn">
+              <button onclick="openNav()">
+                <span class="s-1">
+
+                </span>
+                <span class="s-2">
+
+                </span>
+                <span class="s-3">
+
+                </span>
+              </button>
+            </div>
+            <div id="myNav" class="overlay">
+              <div class="overlay-content">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="product.html">Products</a>
+                <!-- <a href="blog.html">Blog</a> -->
+                <a href="contact.html">Contact Us</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+
+
+     <!-- filter section -->
+ <div class="container">
+  <div class="filter_section">
+    <div>
+      <label for="categoryFilter">Category:</label>
+      <select id="categoryFilter">
+        <option value="all">All</option>
+        <option value="men">Men</option>
+        <option value="women">Women</option>
+      </select>
+    </div>
+    <div>
+      <label for="priceFilter">Price:</label>
+      <select id="priceFilter">
+        <option value="all">All</option>
+        <option value="below25000">Below Rs. 25,000</option>
+        <option value="25000to40000">Rs. 25,000 - Rs. 40,000</option>
+        <option value="above40000">Above Rs. 40,000</option>
+      </select>
+    </div>
+  </div>
+
+       <!-- end filter section -->
+
+ <!-- product section -->
+<section class="product_section layout_padding">
+    <!-- Scroll to Top Button -->
+<button id="scrollToTop" class="scroll-to-top">↑</button>
+
+  <div class="container">
+    <div class="heading_container">
+      <h2>
+        Our Products
+      </h2>
+    </div>
+    <div class="product_container">
+      <!-- decant -->
+      <div class="box" data-category="All men women" data-price="4000">
+        <img src="images/111.jpg" alt="Decants">
+        <h5>10mm Decants for any Fragrance</h5>
+        <h4>Rs. 4,000.00</h4>
+        <a href="https://wa.me/+94777168723?text=I'm%20interested%20in%20Hugo%20Man%20priced%20at%20Rs.21,500.00" class="whatsapp-button" target="_blank">Order On WhatsApp</a>
+      </div>
+      <!-- Hugo Man -->
+      <div class="box" data-category="men" data-price="21500">
+        <img src="images/hugo_man.jpg" alt="Hugo Man">
+        <h5>Hugo Man</h5>
+        <h4>Rs. 21,500.00</h4>
+        <a href="https://wa.me/+94777168723?text=I'm%20interested%20in%20Hugo%20Man%20priced%20at%20Rs.21,500.00" class="whatsapp-button" target="_blank"> Order On WhatsApp</a>
+      </div>
+      
+      <!-- Mont Blanc Legend -->
+      <div class="box" data-category="men" data-price="19900">
+        <img src="images/mont_blanc_legend.jpg" alt="Mont Blanc Legend">
+        <h5>Mont Blanc Legend</h5>
+        <h4>Rs. 19,900.00</h4>
+        <a href="https://wa.me/+94777168723?text=I'm%20interested%20in%20Mont%20Blanc%20Legend%20priced%20at%20Rs.19,900.00" class="whatsapp-button" target="_blank">Order On WhatsApp</a>
+      </div>
+      
+      <!-- Nautica Voyage -->
+      <div class="box" data-category="men" data-price="16500">
+        <img src="images/nautica_voyage.jpg" alt="Nautica Voyage">
+        <h5>Nautica Voyage</h5>
+        <h4>Rs. 16,500.00</h4>
+        <a href="https://wa.me/+94777168723?text=I'm%20interested%20in%20Nautica%20Voyage%20priced%20at%20Rs.16,500.00" class="whatsapp-button" target="_blank">Order On WhatsApp</a>
+      </div>
+
+      <!-- CK One -->
+      <div class="box" data-category="men" data-price="15500">
+        <img src="images/ck_one.jpg" alt="CK One">
+        <h5>CK One</h5>
+        <h4>Rs. 15,500.00</h4>
+        <a href="https://wa.me/+94777168723?text=I'm%20interested%20in%20CK%20One%20priced%20at%20Rs.15,500.00" class="whatsapp-button" target="_blank">Order On WhatsApp</a>
+      </div>
+
+      <!-- CK Eternity -->
+      <div class="box" data-category="men" data-price="16000">
+        <img src="images/ck_eternity.jpg" alt="CK Eternity">
+        <h5>CK Eternity</h5>
+        <h4>Rs. 16,000.00</h4>
+        <a href="https://wa.me/+94777168723?text=I'm%20interested%20in%20CK%20Eternity%20priced%20at%20Rs.16,000.00" class="whatsapp-button" target="_blank">Order On WhatsApp</a>
+      </div>
+
+      <!-- CK Eternity Aqua -->
+      <div class="box" data-category="men" data-price="18500">
+        <img src="images/ck_eternity_aqua.jpg" alt="CK Eternity Aqua">
+        <h5>CK Eternity Aqua</h5>
+        <h4>Rs. 18,500.00</h4>
+        <a href="https://wa.me/+94777168723?text=I'm%20interested%20in%20CK%20Eternity%20Aqua%20priced%20at%20Rs.18,500.00" class="whatsapp-button" target="_blank">Order On WhatsApp</a>
+      </div>
+
+      <!-- Cristiano Ronaldo -->
+      <div class="box" data-category="men" data-price="7500">
+        <img src="images/cristiano_ronaldo.jpg" alt="Cristiano Ronaldo">
+        <h5>Cristiano Ronaldo</h5>
+        <h4>Rs. 7,500.00</h4>
+        <a href="https://wa.me/+94777168723?text=I'm%20interested%20in%20Cristiano%20Ronaldo%20priced%20at%20Rs.7,500.00" class="whatsapp-button" target="_blank">Order On WhatsApp</a>
+      </div>
+
+      <!-- Club De Nuit EDP 150ml -->
+      <div class="box" data-category="men" data-price="24500">
+        <img src="images/club_de_nuit_edp.jpg" alt="Club De Nuit EDP 150ml">
+        <h5>Club De Nuit EDP 150ml</h5>
+        <h4>Rs. 24,500.00</h4>
+        <a href="https://wa.me/+94777168723?text=I'm%20interested%20in%20Club%20De%20Nuit%20EDP%20150ml%20priced%20at%20Rs.24,500.00" class="whatsapp-button" target="_blank">Order On WhatsApp</a>
+      </div>
+
+      <!-- Club De Nuit EDT 105 ml -->
+      <div class="box" data-category="men" data-price="14500">
+        <img src="images/club_de_nuit_edt.jpg" alt="Club De Nuit EDT 105 ml">
+        <h5>Club De Nuit EDT 105 ml</h5>
+        <h4>Rs. 14,500.00</h4>
+        <a href="https://wa.me/+94777168723?text=I'm%20interested%20in%20Club%20De%20Nuit%20EDT%20105ml%20priced%20at%20Rs.14,500.00" class="whatsapp-button" target="_blank">Order On WhatsApp</a>
+      </div>
+
+      <!-- Club De Nuit Parfum 200ml -->
+      <div class="box" data-category="men" data-price="25500">
+        <img src="images/club_de_nuit_parfum.jpg" alt="Club De Nuit Parfum 200ml">
+        <h5>Club De Nuit Parfum 200ml</h5>
+        <h4>Rs. 25,500.00</h4>
+        <a href="https://wa.me/+94777168723?text=I'm%20interested%20in%20Club%20De%20Nuit%20Parfum%20200ml%20priced%20at%20Rs.25,500.00" class="whatsapp-button" target="_blank">Order On WhatsApp</a>
+      </div>
+
+      <!-- Afnan 9 PM -->
+      <div class="box" data-category="men" data-price="13500">
+        <img src="images/afnan_9_pm.jpg" alt="Afnan 9 PM">
+        <h5>Afnan 9 PM</h5>
+        <h4>Rs. 13,500.00</h4>
+        <a href="https://wa.me/+94777168723?text=I'm%20interested%20in%20Afnan%209%20PM%20priced%20at%20Rs.13,500.00" class="whatsapp-button" target="_blank">Order On WhatsApp</a>
+      </div>
+
+      <!-- Davidoff Cool Water Intense 125ml -->
+      <div class="box" data-category="men" data-price="21500">
+        <img src="images/davidoff_cool_water_intense.jpg" alt="Davidoff Cool Water Intense 125ml">
+        <h5>Davidoff Cool Water Intense 125ml</h5>
+        <h4>Rs. 21,500.00</h4>
+        <a href="https://wa.me/+94777168723?text=I'm%20interested%20in%20Davidoff%20Cool%20Water%20Intense%20125ml%20priced%20at%20Rs.21,500.00" class="whatsapp-button" target="_blank">Order On WhatsApp</a>
+      </div>
+
+      <!-- Davidoff Cool Water 100ml -->
+      <div class="box" data-category="men" data-price="12500">
+        <img src="images/davidoff_cool_water.jpg" alt="Davidoff Cool Water 100ml">
+        <h5>Davidoff Cool Water 100ml</h5>
+        <h4>Rs. 12,500.00</h4>
+        <a href="https://wa.me/+94777168723?text=I'm%20interested%20in%20Davidoff%20Cool%20Water%20100ml%20priced%20at%20Rs.12,500.00" class="whatsapp-button" target="_blank">Order On WhatsApp</a>
+      </div>
+
+      <!-- Dolche Gabbana Light Blue -->
+      <div class="box" data-category="men" data-price="29500">
+        <img src="images/dolche_gabbana_light_blue.jpg" alt="Dolche Gabbana Light Blue">
+        <h5>Dolche Gabbana Light Blue</h5>
+        <h4>Rs. 29,500.00</h4>
+        <a href="https://wa.me/+94777168723?text=I'm%20interested%20in%20Dolche%20Gabbana%20Light%20Blue%20priced%20at%20Rs.29,500.00" class="whatsapp-button" target="_blank">Order On WhatsApp</a>
+      </div>
+
+      <!-- Dolche Gabbana The Only One -->
+      <div class="box" data-category="men" data-price="36500">
+        <img src="images/dolche_gabbana_the_only_one.jpg" alt="Dolche Gabbana The Only One">
+        <h5>Dolche Gabbana The Only One</h5>
+        <h4>Rs. 36,500.00</h4>
+        <a href="https://wa.me/+94777168723?text=I'm%20interested%20in%20Dolche%20Gabbana%20The%20Only%20One%20priced%20at%20Rs.36,500.00" class="whatsapp-button" target="_blank">Order On WhatsApp</a>
+      </div>
+
+      <!-- Mancera Instant Crush -->
+      <div class="box" data-category="men" data-price="33500">
+        <img src="images/mancera_instant_crush.jpg" alt="Mancera Instant Crush">
+        <h5>Mancera Instant Crush</h5>
+        <h4>Rs. 33,500.00</h4>
+        <a href="https://wa.me/+94777168723?text=I'm%20interested%20in%20Mancera%20Instant%20Crush%20priced%20at%20Rs.33,500.00" class="whatsapp-button" target="_blank">Order On WhatsApp</a>
+      </div>
+
+      <!-- Bentley for Men -->
+      <div class="box" data-category="men" data-price="27500">
+        <img src="images/bentley_for_men.jpg" alt="Bentley for Men">
+        <h5>Bentley for Men</h5>
+        <h4>Rs. 27,500.00</h4>
+        <a href="https://wa.me/+94777168723?text=I'm%20interested%20in%20Bentley%20for%20Men%20priced%20at%20Rs.27,500.00" class="whatsapp-button" target="_blank">Order On WhatsApp</a>
+      </div>
+
+      <!-- Jean Paul Gaultier Woman -->
+      <div class="box" data-category="women" data-price="18500">
+        <img src="images/jean_paul_gaultier_woman.jpg" alt="Jean Paul Gaultier Woman">
+        <h5>Jean Paul Gaultier Woman</h5>
+        <h4>Rs. 18,500.00</h4>
+        <a href="https://wa.me/+94777168723?text=I'm%20interested%20in%20Jean%20Paul%20Gaultier%20Woman%20priced%20at%20Rs.18,500.00" class="whatsapp-button" target="_blank">Order On WhatsApp</a>
+      </div>
+
+      <!-- Club De Nuit Woman -->
+      <div class="box" data-category="women" data-price="18500">
+        <img src="images/club_de_nuit_woman.jpg" alt="Club De Nuit Woman">
+        <h5>Club De Nuit Woman</h5>
+        <h4>Rs. 18,500.00</h4>
+        <a href="https://wa.me/+94777168723?text=I'm%20interested%20in%20Club%20De%20Nuit%20Woman%20priced%20at%20Rs.18,500.00" class="whatsapp-button" target="_blank">Order On WhatsApp</a>
+      </div>
+
+      <!-- Strong with You -->
+      <div class="box" data-category="men" data-price="40000">
+        <img src="images/strong_with_you.jpg" alt="Strong with You">
+        <h5>Strong with You</h5>
+        <h4>Rs. 40,000.00</h4>
+        <a href="https://wa.me/+94777168723?text=I'm%20interested%20in%20Strong%20with%20You%20priced%20at%20Rs.40,000.00" class="whatsapp-button" target="_blank">Order On WhatsApp</a>
+      </div>
+
+      <!-- Stronger because of you -->
+      <div class="box" data-category="men" data-price="40000">
+        <img src="images/stronger_because_of_you.jpg" alt="Stronger because of you">
+        <h5>Stronger because it's you</h5>
+        <h4>Rs. 40,000.00</h4>
+        <a href="https://wa.me/+94777168723?text=I'm%20interested%20in%20Stronger%20because%20of%20you%20priced%20at%20Rs.40,000.00" class="whatsapp-button" target="_blank">Order On WhatsApp</a>
+      </div>
+
+      <!-- Lattafa Azad -->
+      <div class="box" data-category="men" data-price="12000">
+        <img src="images/lattafa_azad.jpg" alt="Lattafa Azad">
+        <h5>Lattafa Azad</h5>
+        <h4>Rs. 12,000.00</h4>
+        <a href="https://wa.me/+94777168723?text=I'm%20interested%20in%20Lattafa%20Azad%20priced%20at%20Rs.12,000.00" class="whatsapp-button" target="_blank">Order On WhatsApp</a>
+      </div>
+
+      <!-- Lattafa Khamrah -->
+      <div class="box" data-category="men" data-price="13500">
+        <img src="images/lattafa_khamrah.jpg" alt="Lattafa Khamrah">
+        <h5>Lattafa Khamrah</h5>
+        <h4>Rs. 13,500.00</h4>
+        <a href="https://wa.me/+94777168723?text=I'm%20interested%20in%20Lattafa%20Khamrah%20priced%20at%20Rs.13,500.00" class="whatsapp-button" target="_blank">Order On WhatsApp</a>
+      </div>
+
+      <!-- YSL -->
+      <div class="box" data-category="men" data-price="45000">
+        <img src="images/ysl.jpg" alt="YSL">
+        <h5>YSL</h5>
+        <h4>Rs. 45,000.00</h4>
+        <a href="https://wa.me/+94777168723?text=I'm%20interested%20in%20YSL%20priced%20at%20Rs.45,000.00" class="whatsapp-button" target="_blank">Order On WhatsApp</a>
+      </div>
+
+      <!-- Versace Eros EDT -->
+      <div class="box" data-category="men" data-price="28500">
+        <img src="images/versace_eros_edt.jpg" alt="Versace Eros EDT">
+        <h5>Versace Eros EDT</h5>
+        <h4>Rs. 28,500.00</h4>
+        <a href="https://wa.me/+94777168723?text=I'm%20interested%20in%20Versace%20Eros%20EDT%20priced%20at%20Rs.28,500.00" class="whatsapp-button" target="_blank">Order On WhatsApp</a>
+      </div>
+
+      <!-- Embrace Guy Sebastian -->
+      <div class="box" data-category="men" data-price="19500">
+        <img src="images/embrace_guy_sebastian.jpg" alt="Embrace Guy Sebastian">
+        <h5>Embrace Guy Sebastian</h5>
+        <h4>Rs. 19,500.00</h4>
+        <a href="https://wa.me/+94777168723?text=I'm%20interested%20in%20Embrace%20Guy%20Sebastian%20priced%20at%20Rs.19,500.00" class="whatsapp-button" target="_blank">Order On WhatsApp</a>
+      </div>
+
+      <!-- Jean Paul Scandal -->
+      <div class="box" data-category="women" data-price="35500">
+        <img src="images/jean_paul_scandal.jpg" alt="Jean Paul Scandal">
+        <h5>Jean Paul Scandal</h5>
+        <h4>Rs. 35,500.00</h4>
+        <a href="https://wa.me/+94777168723?text=I'm%20interested%20in%20Jean%20Paul%20Scandal%20priced%20at%20Rs.35,500.00" class="whatsapp-button" target="_blank">Order On WhatsApp</a>
+      </div>
+
+      <!-- Jean Paul Le Male -->
+      <div class="box" data-category="men" data-price="49500">
+        <img src="images/jean_paul_le_male.jpg" alt="Jean Paul Le Male">
+        <h5>Jean Paul Le Male</h5>
+        <h4>Rs. 49,500.00</h4>
+        <a href="https://wa.me/+94777168723?text=I'm%20interested%20in%20Jean%20Paul%20Le%20Male%20priced%20at%20Rs.49,500.00" class="whatsapp-button" target="_blank">Order On WhatsApp</a>
+      </div>
+
+      <!-- Hugo Boss United -->
+      <div class="box" data-category="men" data-price="25500">
+        <img src="images/hugo_boss_united.jpg" alt="Hugo Boss United">
+        <h5>Hugo Boss United</h5>
+        <h4>Rs. 25,500.00</h4>
+        <a href="https://wa.me/+94777168723?text=I'm%20interested%20in%20Hugo%20Boss%20United%20priced%20at%20Rs.25,500.00" class="whatsapp-button" target="_blank">Order On WhatsApp</a>
+      </div>
+
+      <!-- Dunhill Desire Blue -->
+      <div class="box" data-category="men" data-price="17500">
+        <img src="images/dunhill_desire_blue.jpg" alt="Dunhill Desire Blue">
+        <h5>Dunhill Desire Blue</h5>
+        <h4>Rs. 17,500.00</h4>
+        <a href="https://wa.me/+94777168723?text=I'm%20interested%20in%20Dunhill%20Desire%20Blue%20priced%20at%20Rs.17,500.00" class="whatsapp-button" target="_blank">Order On WhatsApp</a>
+      </div>
+
+      <!-- Dunhill Desire Red -->
+      <div class="box" data-category="men" data-price="17500">
+        <img src="images/dunhill_desire_red.jpg" alt="Dunhill Desire Red">
+        <h5>Dunhill Desire Red</h5>
+        <h4>Rs. 17,500.00</h4>
+        <a href="https://wa.me/+94777168723?text=I'm%20interested%20in%20Dunhill%20Desire%20Red%20priced%20at%20Rs.17,500.00" class="whatsapp-button" target="_blank">Order On WhatsApp</a>
+      </div>
+
+      <!-- Spice Bomb -->
+      <div class="box" data-category="men" data-price="36500">
+        <img src="images/spice_bomb.jpg" alt="Spice Bomb">
+        <h5>Spice Bomb</h5>
+        <h4>Rs. 36,500.00</h4>
+        <a href="https://wa.me/+94777168723?text=I'm%20interested%20in%20Spice%20Bomb%20priced%20at%20Rs.36,500.00" class="whatsapp-button" target="_blank">Order On WhatsApp</a>
+      </div>
+
+      <!-- Dylan Blue -->
+      <div class="box" data-category="men" data-price="25500">
+        <img src="images/dylan_blue.jpg" alt="Dylan Blue">
+        <h5>Dylan Blue</h5>
+        <h4>Rs. 25,500.00</h4>
+        <a href="https://wa.me/+94777168723?text=I'm%20interested%20in%20Dylan%20Blue%20priced%20at%20Rs.25,500.00" class="whatsapp-button" target="_blank">Order On WhatsApp</a>
+      </div>
+
+      <!-- Drakkar Noir -->
+      <div class="box" data-category="men" data-price="17500">
+        <img src="images/drakkar_noir.jpg" alt="Drakkar Noir">
+        <h5>Drakkar Noir</h5>
+        <h4>Rs. 17,500.00</h4>
+        <a href="https://wa.me/+94777168723?text=I'm%20interested%20in%20Drakkar%20Noir%20priced%20at%20Rs.17,500.00" class="whatsapp-button" target="_blank">Order On WhatsApp</a>
+      </div>
+
+      <!-- Armaf Precious -->
+      <div class="box" data-category="men" data-price="23000">
+        <img src="images/armaf_precious.jpg" alt="Armaf Precious">
+        <h5>Armaf Precious</h5>
+        <h4>Rs. 23,000.00</h4>
+        <a href="https://wa.me/+94777168723?text=I'm%20interested%20in%20Armaf%20Precious%20priced%20at%20Rs.23,000.00" class="whatsapp-button" target="_blank">Order On WhatsApp</a>
+      </div>
+
+      <!-- Lacoste White -->
+      <div class="box" data-category="men" data-price="25000">
+        <img src="images/lacoste_white.jpg" alt="Lacoste White">
+        <h5>Lacoste White</h5>
+        <h4>Rs. 25,000.00</h4>
+        <a href="https://wa.me/+94777168723?text=I'm%20interested%20in%20Lacoste%20White%20priced%20at%20Rs.25,000.00" class="whatsapp-button" target="_blank">Order On WhatsApp</a>
+      </div>
+
+      <!-- Aramis Brown -->
+      <div class="box" data-category="men" data-price="17500">
+        <img src="images/aramis_brown.jpg" alt="Aramis Brown">
+        <h5>Aramis Brown</h5>
+        <h4>Rs. 17,500.00</h4>
+        <a href="https://wa.me/+94777168723?text=I'm%20interested%20in%20Aramis%20Brown%20priced%20at%20Rs.17,500.00" class="whatsapp-button" target="_blank">Order On WhatsApp</a>
+      </div>
+
+      <!-- Midnight Fantasy -->
+      <div class="box" data-category="women" data-price="16500">
+        <img src="images/midnight_fantasy.jpg" alt="Midnight Fantasy">
+        <h5>Midnight Fantasy</h5>
+        <h4>Rs. 16,500.00</h4>
+        <a href="https://wa.me/+94777168723?text=I'm%20interested%20in%20Midnight%20Fantasy%20priced%20at%20Rs.16,500.00" class="whatsapp-button" target="_blank">Order On WhatsApp</a>
+      </div>
+
+
+
+      <!-- Issey Miyake -->
+      <div class="box" data-category="men" data-price="24500">
+        <img src="images/issey_miyake.jpg" alt="Issey Miyake">
+        <h5>Issey Miyake</h5>
+        <h4>Rs. 24,500.00</h4>
+        <a href="https://wa.me/+94777168723?text=I'm%20interested%20in%20Issey%20Miyake%20priced%20at%20Rs.24,500.00" class="whatsapp-button" target="_blank">Order On WhatsApp</a>
+      </div>
+<!-- women category -->
+      <div class="box" data-category="women" data-price="28500">
+        <img src="images/perfect-marc-jacobs.jpg" alt="Perfect Marc Jacobs">
+        <h5>Perfect Marc Jacobs EDP 50ml</h5>
+        <h4>Rs. 28,500.00</h4>
+        <a href="https://wa.me/+94777168723?text=I'm%20interested%20in%20Perfect%20Marc%20Jacobs%20EDP%2050ml%20priced%20at%20Rs.28,500.00" class="whatsapp-button" target="_blank">Order On WhatsApp</a>
+      </div>
+      <div class="box" data-category="women" data-price="22000">
+        <img src="images/ralph-lauren.jpg" alt="Ralph Lauren EDT">
+        <h5>Ralph Lauren EDT 100ml</h5>
+        <h4>Rs. 22,000.00</h4>
+        <a href="https://wa.me/+94777168723?text=I'm%20interested%20in%20Ralph%20Lauren%20EDT%20100ml%20priced%20at%20Rs.22,000.00" class="whatsapp-button" target="_blank">Order On WhatsApp</a>
+      </div>
+      <div class="box" data-category="women" data-price="15500">
+        <img src="images/mira-vanilla.jpg" alt="Mira Vanilla and Praline">
+        <h5>Mira Vanilla and Praline EDP 100ml</h5>
+        <h4>Rs. 15,500.00</h4>
+        <a href="https://wa.me/+94777168723?text=I'm%20interested%20in%20Mira%20Vanilla%20and%20Praline%20EDP%20100ml%20priced%20at%20Rs.15,500.00" class="whatsapp-button" target="_blank">Order On WhatsApp</a>
+      </div>
+      <div class="box" data-category="women" data-price="30500">
+        <img src="images/flower-by-kenzo.jpg" alt="Flower by Kenzo">
+        <h5>Flower by Kenzo EDP 100ml</h5>
+        <h4>Rs. 30,500.00</h4>
+        <a href="https://wa.me/+94777168723?text=I'm%20interested%20in%20Flower%20by%20Kenzo%20EDP%20100ml%20priced%20at%20Rs.30,500.00" class="whatsapp-button" target="_blank">Order On WhatsApp</a>
+      </div>
+      <div class="box" data-category="women" data-price="19000">
+        <img src="images/lalique.jpg" alt="Lalique">
+        <h5>Lalique EDP 100ml</h5>
+        <h4>Rs. 19,000.00</h4>
+        <a href="https://wa.me/+94777168723?text=I'm%20interested%20in%20Lalique%20EDP%20100ml%20priced%20at%20Rs.19,000.00" class="whatsapp-button" target="_blank">Order On WhatsApp</a>
+      </div>
+      <div class="box" data-category="women" data-price="20000">
+        <img src="images/ck-euphoria.jpg" alt="Calvin Klein Euphoria">
+        <h5>Calvin Klein Euphoria EDP 100ml</h5>
+        <h4>Rs. 20,000.00</h4>
+        <a href="https://wa.me/+94777168723?text=I'm%20interested%20in%20Calvin%20Klein%20Euphoria%20EDP%20100ml%20priced%20at%20Rs.20,000.00" class="whatsapp-button" target="_blank">Order On WhatsApp</a>
+      </div>
+      <div class="box" data-category="women" data-price="35000">
+        <img src="images/flower-bomb.jpg" alt="Flower Bomb Victor & Wolf">
+        <h5>Flower Bomb Victor & Wolf EDP 50ml</h5>
+        <h4>Rs. 35,000.00</h4>
+        <a href="https://wa.me/+94777168723?text=I'm%20interested%20in%20Flower%20Bomb%20Victor%20&%20Wolf%20EDP%2050ml%20priced%20at%20Rs.35,000.00" class="whatsapp-button" target="_blank">Order On WhatsApp</a>
+      </div>
+      <div class="box" data-category="women" data-price="34000">
+        <img src="images/gucci-guilty.jpg" alt="Gucci Guilty">
+        <h5>Gucci Guilty EDT 90ml</h5>
+        <h4>Rs. 34,000.00</h4>
+        <a href="https://wa.me/+94777168723?text=I'm%20interested%20in%20Gucci%20Guilty%20EDT%2090ml%20priced%20at%20Rs.34,000.00" class="whatsapp-button" target="_blank">Order On WhatsApp</a>
+      </div>
+      <div class="box" data-category="women" data-price="15500">
+        <img src="images/moschino-love.jpg" alt="Moschino I Love Love">
+        <h5>Moschino I Love Love EDT 100ml</h5>
+        <h4>Rs. 15,500.00</h4>
+        <a href="https://wa.me/+94777168723?text=I'm%20interested%20in%20Moschino%20I%20Love%20Love%20EDT%20100ml%20priced%20at%20Rs.15,500.00" class="whatsapp-button" target="_blank">Order On WhatsApp</a>
+      </div>
+      <div class="box" data-category="women" data-price="11500">
+        <img src="images/ariana-grande.jpg" alt="Ariana Grande">
+        <h5>Ariana Grande EDP 30ml</h5>
+        <h4>Rs. 11,500.00</h4>
+        <a href="https://wa.me/+94777168723?text=I'm%20interested%20in%20Ariana%20Grande%20EDP%2030ml%20priced%20at%20Rs.11,500.00" class="whatsapp-button" target="_blank">Order On WhatsApp</a>
+      </div>
+      <div class="box" data-category="women" data-price="35000">
+        <img src="images/dg-the-only-one.jpg" alt="Dolce & Gabbana The Only One">
+        <h5>Dolce & Gabbana The Only One EDP 100ml</h5>
+        <h4>Rs. 35,000.00</h4>
+        <a href="https://wa.me/+94777168723?text=I'm%20interested%20in%20Dolce%20&%20Gabbana%20The%20Only%20One%20EDP%20100ml%20priced%20at%20Rs.35,000.00" class="whatsapp-button" target="_blank">Order On WhatsApp</a>
+      </div>
+      <div class="box" data-category="women" data-price="14000">
+        <img src="images/elizabeth-arden.jpg" alt="Elizabeth Arden Green Tea">
+        <h5>Elizabeth Arden Green Tea EDP 100ml</h5>
+        <h4>Rs. 14,000.00</h4>
+        <a href="https://wa.me/+94777168723?text=I'm%20interested%20in%20Elizabeth%20Arden%20Green%20Tea%20EDP%20100ml%20priced%20at%20Rs.14,000.00" class="whatsapp-button" target="_blank">Order On WhatsApp</a>
+      </div>
+      <div class="box" data-category="women" data-price="17000">
+        <img src="images/roberto-cavali.jpg" alt="Robert Cavali">
+        <h5>Robert Cavali EDP 75ml</h5>
+        <h4>Rs. 17,000.00</h4>
+        <a href="https://wa.me/+94777168723?text=I'm%20interested%20in%20Robert%20Cavali%20EDP%2075ml%20priced%20at%20Rs.17,000.00" class="whatsapp-button" target="_blank">Order On WhatsApp</a>
+      </div>
+      <div class="box" data-category="women" data-price="23000">
+        <img src="images/narciso-rodriguez.jpg" alt="Narciso Rodriguez for Her">
+        <h5>Narciso Rodriguez for Her EDP 50ml</h5>
+        <h4>Rs. 23,000.00</h4>
+        <a href="https://wa.me/+94777168723?text=I'm%20interested%20in%20Narciso%20Rodriguez%20for%20Her%20EDP%2050ml%20priced%20at%20Rs.23,000.00" class="whatsapp-button" target="_blank">Order On WhatsApp</a>
+      </div>
+      <div class="box" data-category="women" data-price="40000">
+        <img src="images/ysl-black-opium.jpg" alt="YSL Black Opium">
+        <h5>YSL Black Opium EDP 50ml</h5>
+        <h4>Rs. 40,000.00</h4>
+        <a href="https://wa.me/+94777168723?text=I'm%20interested%20in%20YSL%20Black%20Opium%20EDP%2050ml%20priced%20at%20Rs.40,000.00" class="whatsapp-button" target="_blank">Order On WhatsApp</a>
+      </div>
+      <div class="box" data-category="women" data-price="14500">
+        <img src="images/paco-rabanne-lady-million.jpg" alt="Paco Rabanne Lady Million">
+        <h5>Paco Rabanne Lady Million EDP 30ml</h5>
+        <h4>Rs. 14,500.00</h4>
+        <a href="https://wa.me/+94777168723?text=I'm%20interested%20in%20Paco%20Rabanne%20Lady%20Million%20EDP%2030ml%20priced%20at%20Rs.14,500.00" class="whatsapp-button" target="_blank">Order On WhatsApp</a>
+      </div>
+      <div class="box" data-category="women" data-price="39000">
+        <img src="images/good-girl.jpg" alt="Good Girl">
+        <h5>Good Girl EDP 80ml</h5>
+        <h4>Rs. 39,000.00</h4>
+        <a href="https://wa.me/+94777168723?text=I'm%20interested%20in%20Good%20Girl%20EDP%2080ml%20priced%20at%20Rs.39,000.00" class="whatsapp-button" target="_blank">Order On WhatsApp</a>
+      </div>
+      <div class="box" data-category="women" data-price="40000">
+        <img src="images/emporio-armani-because-its-you.jpg" alt="Emporio Armani Because It’s You">
+        <h5>Emporio Armani Because It’s You EDP 100ml</h5>
+        <h4>Rs. 40,000.00</h4>
+        <a href="https://wa.me/+94777168723?text=I'm%20interested%20in%20Emporio%20Armani%20Because%20It’s%20You%20EDP%20100ml%20priced%20at%20Rs.40,000.00" class="whatsapp-button" target="_blank">Order On WhatsApp</a>
+      </div>
+      <div class="box" data-category="women" data-price="30000">
+        <img src="images/dg-the-one.jpg" alt="Dolce and Gabbana The One">
+        <h5>Dolce and Gabbana The One EDP 75ml</h5>
+        <h4>Rs. 30,000.00</h4>
+        <a href="https://wa.me/+94777168723?text=I'm%20interested%20in%20Dolce%20and%20Gabbana%20The%20One%20EDP%2075ml%20priced%20at%20Rs.30,000.00" class="whatsapp-button" target="_blank">Order On WhatsApp</a>
+      </div>
+      <div class="box" data-category="women" data-price="22500">
+        <img src="images/giorgio-armani-si.jpg" alt="Giorgio Armani Si">
+        <h5>Giorgio Armani Si EDP 50ml</h5>
+        <h4>Rs. 22,500.00</h4>
+        <a href="https://wa.me/+94777168723?text=I'm%20interested%20in%20Giorgio%20Armani%20Si%20EDP%2050ml%20priced%20at%20Rs.22,500.00" class="whatsapp-button" target="_blank">Order On WhatsApp</a>
+      </div>
+      <div class="box" data-category="women" data-price="16000">
+        <img src="images/club-de-nuit-woman.jpg" alt="Club de Nuit Woman">
+        <h5>Club de Nuit Woman EDP 105ml</h5>
+        <h4>Rs. 16,000.00</h4>
+        <a href="https://wa.me/+94777168723?text=I'm%20interested%20in%20Club%20de%20Nuit%20Woman%20EDP%20105ml%20priced%20at%20Rs.16,000.00" class="whatsapp-button" target="_blank">Order On WhatsApp</a>
+      </div>
+      <div class="box" data-category="women" data-price="18000">
+        <img src="images/club-de-nuit-intense-woman.jpg" alt="Club de Nuit Intense Woman">
+        <h5>Club de Nuit Intense Woman EDP 105ml</h5>
+        <h4>Rs. 18,000.00</h4>
+        <a href="https://wa.me/+94777168723?text=I'm%20interested%20in%20Club%20de%20Nuit%20Intense%20Woman%20EDP%20105ml%20priced%20at%20Rs.18,000.00" class="whatsapp-button" target="_blank">Order On WhatsApp</a>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <!DOCTYPE html>
+  <html>
+  
+  <head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+  
+    <title>KS Fragrance</title>
+  
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  
+    <!-- fonts style -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,700&display=swap" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+  
+  </head>
+  
+   <body class="sub_page">
+    <div class="hero_area">
+      <!-- header section starts -->
+      <header class="header_section">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container">
+            <a class="navbar-brand" href="index.html">
+              <span>KS FRAGRANCE</span>
+            </a>
+            <div class="">
+              <div class="custom_menu-btn">
+                <button onclick="openNav()">
+                  <span class="s-1"></span>
+                  <span class="s-2"></span>
+                  <span class="s-3"></span>
+                </button>
+              </div>
+              <div id="myNav" class="overlay">
+                <div class="overlay-content">
+                  <a href="index.html">Home</a>
+                  <a href="about.html">About</a>
+                  <a href="product.html">Products</a>
+                  <a href="contact.html">Contact Us</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- end header section -->
+    </div>
+
+  
+<!-- filter section -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const categoryFilter = document.getElementById("categoryFilter");
+    const priceFilter = document.getElementById("priceFilter");
+    const products = document.querySelectorAll(".product_container .box");
+
+    function filterProducts() {
+  const category = categoryFilter.value;
+  const price = priceFilter.value;
+
+  products.forEach(product => {
+    const productCategories = product.getAttribute("data-category").split(" ");
+    const productPrice = parseInt(product.getAttribute("data-price"));
+
+    let isVisible = true;
+
+    if (category !== "all" && !productCategories.includes(category)) {
+      isVisible = false;
+    }
+
+    if (price !== "all") {
+      if (
+        (price === "below25000" && productPrice >= 25000) ||
+        (price === "25000to40000" && (productPrice < 25000 || productPrice > 40000)) ||
+        (price === "above40000" && productPrice <= 40000)
+      ) {
+        isVisible = false;
+      }
+    }
+
+    product.style.display = isVisible ? "block" : "none";
+  });
+}
+
+    categoryFilter.addEventListener("change", filterProducts);
+    priceFilter.addEventListener("change", filterProducts);
+  });
+</script>
+
+<!-- End filter section -->
+
+    <script>
+      // Add highlighting effect on product selection
+      document.addEventListener("DOMContentLoaded", function () {
+        const boxes = document.querySelectorAll(".product_container .box");
+  
+        boxes.forEach((box) => {
+          box.addEventListener("click", function () {
+            // Remove 'selected' class from all boxes
+            boxes.forEach((b) => b.classList.remove("selected"));
+  
+            // Add 'selected' class to the clicked box
+            this.classList.add("selected");
+          });
+        });
+      });
+    </script>
+  </body>
+  
+  </html>
+  
+  <script>
+    // Scroll-to-Top Button Functionality
+    document.addEventListener("DOMContentLoaded", function () {
+      const scrollToTopButton = document.getElementById("scrollToTop");
+      const productSection = document.querySelector(".product_section"); // Select the Product Section
+
+      // Show or hide the button based on scroll position
+      window.addEventListener("scroll", function () {
+        if (window.scrollY > 300) {
+          scrollToTopButton.style.display = "block";
+        } else {
+          scrollToTopButton.style.display = "none";
+        }
+      });
+
+      // Scroll to the top of the Product Section when the button is clicked
+      scrollToTopButton.addEventListener("click", function () {
+        if (productSection) {
+          const offsetTop = productSection.offsetTop;
+          window.scrollTo({
+            top: offsetTop,
+            behavior: "smooth"
+          });
+        }
+      });
+    });
+  </script>
+
+
+
+
+
+<!-- end scroll button -->
+  
+<script>
+  // JavaScript to dynamically generate WhatsApp links
+  document.addEventListener("DOMContentLoaded", function () {
+    const whatsappNumber = "+94777168723"; // Replace with your WhatsApp number
+    const buttons = document.querySelectorAll(".whatsapp-button");
+
+    buttons.forEach(button => {
+      const box = button.closest(".box");
+      const productName = box.querySelector("h5").textContent; // Use product name directly from the DOM
+      const productPrice = box.querySelector("h4").textContent.replace("Rs.", "").trim();
+
+      // Generate WhatsApp link
+      const message = `I'm interested in ${productName} priced at Rs.${productPrice}`;
+      const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+
+      // Update button href
+      button.setAttribute("href", whatsappLink);
+      button.setAttribute("target", "_blank");
+    });
+  });
+</script>
+  <!-- end product section -->
+
+  <!-- info section -->
+
+  <section class="info_section layout_padding">
+    <div class="container">
+      <div class="info_social-container">
+        <h5>
+          Follow Us
+        </h5>
+        <div class="info_social">
+          <div>
+            <a href="">
+              <img src="images/facebook-logo-button.png" alt="">
+            </a>
+          </div>
+          <div>
+            <a href="">
+              <img src="images/twitter-logo-button.png" alt="">
+            </a>
+          </div>
+          <div>
+            <a href="">
+              <img src="images/linkedin.png" alt="">
+            </a>
+          </div>
+          <div>
+            <a href="">
+              <img src="images/instagram.png" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h6>
+            About KS Fragrance
+          </h6>
+          <p>
+            At KS Fragrance, we are passionate about bringing you the finest scents that elevate your personality and leave a lasting impression. Our collection features 100% authentic perfumes sourced from trusted brands and suppliers worldwide, ensuring unparalleled quality and satisfaction. Whether you're seeking a signature scent or the perfect gift, KS Fragrance is your destination for luxury, authenticity, and timeless elegance.
+          </p>
+        </div>
+        <div class="col-md-2 offset-lg-1">
+          <h6>
+            Menus
+          </h6>
+          <ul>
+            <li class=" active">
+              <a class="" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="">
+              <a class="" href="about.html">About </a>
+            </li>
+            <li class="">
+              <a class="" href="product.html">Products </a>
+            </li>
+            <li class="">
+              <a class="" href="blog.html">Blog </a>
+            </li>
+            <li class="">
+              <a class="" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h6>
+            Useful Links
+          </h6>
+          <ul>
+            <li>
+              <a href="">
+                Folow us on Facebook
+              </a>
+            </li>
+            <li>
+              <a href="">
+                Follow us on Instagram
+              </a>
+            </li>
+            <li>
+              <a href="">
+                Follow us on YouTube
+              </a>
+            </li>
+            
+          </ul>
+        </div>
+        <div class="col-md-4 col-lg-3">
+          <h6>
+            Contact Us
+          </h6>
+          <div class="info_link-box">
+            <a href="">
+              <img src="images/location-white.png" alt="">
+              <span> Avenue Road,Ampara,Sri Lanka</span>
+            </a>
+            <a href="">
+              <img src="images/call-white.png" alt="">
+              <span>+94777168723</span>
+            </a>
+            <a href="">
+              <img src="images/mail-white.png" alt="">
+              <span> ks@gmail.com</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info section -->
+
+
+  <!-- footer section -->
+  <section class="container-fluid footer_section ">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> All Rights Reserved. Design by
+        <a href="https://www.linkedin.com/in/dushmantha-kriyaanvitha-30109b113/">DK</a>
+      </p>
+    </div>
+  </section>
+  <!-- end  footer section -->
+
+
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/custom.js"></script>
+
+</body>
+
+</html>
